@@ -88,7 +88,7 @@ Scala, в соответствии с описанием его кодирующ
 42
 > scala calculator.scala 20 20 + acc 2 /
 20
-> # Если ваша оболочка считает символ `*` [wildcard](https://tldp.org/LDP/GNU-Linux-Tools-Summary/html/x11655.htm)-параметром,
+> # Если ваша оболочка считает символ `*` wildcard-параметром (https://tldp.org/LDP/GNU-Linux-Tools-Summary/html/x11655.htm),
 > # стоит его экранировать, заменив на последовательность `\*`.
 > scala calculator.scala 20 2 *
 40
