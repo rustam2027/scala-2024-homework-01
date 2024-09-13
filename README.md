@@ -92,7 +92,7 @@ Scala, в соответствии с описанием его кодирующ
 40
 > scala calculator.scala 20 0 /
 0
-scala calculator.scala blink 1 -
+> scala calculator.scala blink 1 -
 -1
 ```
 
