@@ -11,7 +11,7 @@ class State {
   var a: Int = 0
   var b: Int = 0
   var blink: Boolean = false
-  var break: Boolean = false
+  var break: Boolean = false // ?
 }
 
 trait Command {
@@ -46,7 +46,7 @@ object Divide extends Command {
       state.a = 0
       state.b = 0
     } else {
-      state.acc = state.a * state.b
+      state.acc = state.a / state.b
     }
     state.blink = false
   }
@@ -119,13 +119,14 @@ def parseCommand(command: String) =
     */
   val state = new State
 
-  boundary:
+  boundary {
     for (c <- commands) {
       parseCommand(c).exec(state)
       if (state.break) {
         break()
       }
     }
+  }
 
   println(state.acc)
 

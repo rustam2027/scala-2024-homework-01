@@ -21,7 +21,7 @@ for test in test_list:
     test_name = test[:-3]
     if (os.path.isfile(f"{test_name}.in") and os.path.isfile(f"{test_name}.out")):
         result = make_test(test_name)
-        if (result[0] or not result[2] != 0):
+        if (result[0] and not result[2] != 0):
             print(f"test {test_name} is PASSED")
         else:
             print(
